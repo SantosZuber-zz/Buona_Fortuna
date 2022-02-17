@@ -1,0 +1,46 @@
+#menu_bar{
+    display: none;
+}
+
+nav{
+    position: absolute;
+    top: 57px;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    background-color: #b89d96;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+nav a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+nav a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+#menu_bar:checked ~ nav{
+    transform: translateX(0%);
+}
+/*LOGO*/
+.logo{
+    width: 50px;
+}
+.logo__flex--container{
+    display: flex;
+    justify-content: left;
+}
+.container label{
+    position: relative;
+    bottom: 47px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+.icon_menu{
+    width: 50px;
+}
