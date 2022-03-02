@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--CSS-->
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/style.css">
-        <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Buona Fortuna</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buona Fortuna ~ Menu</title>
 </head>
-<body>
+
+<body class="menu__bg">
     <header>
-        <img src="../assets/img/logo.png" alt="logo" class="brandLogo">
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/whatsapp.png" alt="logo_whatsapp" class="logo_whatsapp"></a>
-
+        <div class="logo__flex--container">
+            <img src="../assets/img/icon_logo.png" alt="logo" class="logo">
+        </div>
+        <div class="container">
+            <input type="checkbox" id="menu_bar">
+            <label class="icon__menu--flexbox" for="menu_bar">
+                <img src="../assets/img/icon_menu.png" alt="icon_menu" class="icon_menu">
+            </label>
+            <nav class="mobile__nav">
+                <a href="../index.html">Inicio</a>
+                <a href="menu.html">Menu</a>
+                <a href="historia.html">Historia</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="desktop__navbar">
+            <nav class="desktop__nav">
+                <a href="../index.html">Inicio</a>
+                <a href="menu.html">Menu</a>
+                <a href="historia.html">Historia</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    
+
+
+
     <main class="menu">
         <h3>Menu</h3>
-        <hr class="decoration__hr">
-        
 
         <h4>Entradas</h4>
         <table>
@@ -105,13 +119,17 @@
         </table>
     </main>
 
-<footer>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-        vel velit ipsum. In hac habitasse platea dictumst. Donec
-        semper eros lacus, a convallis ligula elementum ut. Nulla</p>\
-        <a href="https://www.tripadvisor.com.ar/" target="_blank"><img src="../assets/img/tripadvisor_white.png" alt="tripadvisor" class="tripadvisor"></a>
+    <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/whatsapp.png" alt="logo_whatsapp"
+            class="logo_whatsapp"></a>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            vel velit ipsum. In hac habitasse platea dictumst. Donec
+            semper eros lacus, a convallis ligula elementum ut. Nulla</p>
+        <a href="https://www.tripadvisor.com.ar/" target="_blank"><img src="../assets/img/tripadvisor_white.png"
+                alt="tripadvisor" class="tripadvisor"></a>
     </footer>
 
-
 </body>
+
 </html>
