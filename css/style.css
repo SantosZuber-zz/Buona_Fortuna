@@ -1,0 +1,397 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+.banner h1 {
+  font-family: Roboto;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 700%;
+  z-index: 50;
+}
+.banner img {
+  filter: blur(7px);
+  width: 100%;
+  height: 700px;
+}
+
+footer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  z-index: -1;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin: 10px;
+  font-size: 70%;
+}
+
+.tripadvisor {
+  justify-content: right;
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    top: 90px;
+    font-size: 70px !important;
+  }
+
+  /*HISTORIA*/
+  .historia article {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "p1" "p2" "p3" "p4";
+  }
+
+  /*GALERIA*/
+  .galery__grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "title" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+  }
+
+  /*FOOTER*/
+  footer {
+    flex-direction: column;
+    justify-items: center;
+  }
+  footer a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tripadvisor {
+    width: 100px;
+    justify-content: center;
+  }
+}
+header .container {
+  display: none;
+}
+
+.desktop__navbar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.desktop__navbar a {
+  text-decoration: none;
+  color: black;
+  margin-right: 17px;
+  transition: color 0.2s;
+}
+.desktop__navbar a:hover {
+  color: white;
+}
+
+/*LOGO*/
+.logo {
+  width: 50px;
+}
+
+.logo__flex--container {
+  display: flex;
+  justify-content: left;
+}
+
+.container label {
+  position: relative;
+  bottom: 47px;
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.icon_menu {
+  width: 50px;
+}
+
+@media (max-width: 767px) {
+  .desktop__navbar {
+    display: none;
+  }
+
+  header .container {
+    display: block;
+  }
+
+  #menu_bar {
+    display: none;
+  }
+
+  .mobile__nav {
+    position: absolute;
+    top: 57px;
+    left: 0%;
+    width: 100%;
+    background-color: #b89890;
+    height: auto;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+  }
+  .mobile__nav a {
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .mobile__nav a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  #menu_bar:checked ~ .mobile__nav {
+    transform: translateX(0%);
+  }
+}
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: -7px;
+  position: relative;
+  display: inline-block;
+}
+.banner .text__container {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 70;
+}
+.banner h1 {
+  text-align: center;
+  color: white;
+  font-size: 700%;
+  z-index: 50;
+  text-shadow: 2px 7px 33px black;
+}
+.banner h2 {
+  margin: 40px;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  z-index: 50;
+  text-shadow: 2px 7px 23px black;
+}
+.banner img {
+  filter: blur(7px);
+  width: 100%;
+  height: 773px;
+}
+
+.menu__bg {
+  background-image: url(../assets/img/cuero.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+
+.menu {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+  text-shadow: 7px 2px 14px black;
+}
+.menu h3 {
+  margin-top: 100px;
+  font-size: 307%;
+  text-align: center;
+}
+.menu h4 {
+  margin-left: 7px;
+  margin-bottom: 14px;
+}
+.menu table {
+  padding: 10px;
+}
+.menu hr {
+  margin: 30px;
+}
+
+.historia div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.historia div img {
+  width: 70%;
+  height: 40%;
+}
+.historia h3 {
+  font-size: 307%;
+  text-align: center;
+  margin-top: 100px;
+}
+.historia article {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "p1" "p2";
+}
+.historia article p {
+  margin: 30px;
+  font-size: 130%;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.galery__grid-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "title title" "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+}
+
+.galery__img {
+  width: 94%;
+}
+
+.galery__title {
+  grid-area: title;
+  margin-top: 100px;
+  font-size: 400%;
+  text-align: center;
+}
+
+.galery__bg {
+  background-image: url(../assets/img/bgtest.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacto__container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.contacto__container h3 {
+  grid-area: title;
+  font-size: 307%;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.inputs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.inputs {
+  margin-top: 7px;
+  text-align: center;
+  width: 137px;
+  transition: 0.2s;
+}
+
+.inputs:focus {
+  width: 170px;
+  background-color: white;
+}
+
+.inputs3 {
+  height: 40px;
+  border-radius: 7px;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit {
+  background-color: #9f827b;
+  border-radius: 14px;
+  color: black;
+  margin-top: 40px;
+  height: 100px;
+  width: 10%;
+  min-width: 90px;
+  transition: width 0.3s;
+}
+
+.submit:hover {
+  cursor: pointer;
+  width: 170px;
+}
+
+.submit:active {
+  background-color: white;
+}
+
+.map {
+  grid-area: map;
+  width: 100%;
+  margin-top: 40px;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e5a651;
+  color: black;
+}
+
+header {
+  background-color: #9f827b;
+  color: black;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo_whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 300;
+}
+
+::selection {
+  background: white;
+  color: #e5a651;
+}
+
+/*# sourceMappingURL=style.css.map */

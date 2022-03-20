@@ -1,0 +1,46 @@
+@use 'banner';
+@use 'footer';
+@use 'media';
+@use 'navbar';
+@use 'index';
+@use 'menu';
+@use 'historia';
+@use 'galeria';
+@use 'contacto';
+
+@import 'variables';
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: $color-principal;
+    color: black;
+}
+
+header{
+    background-color: $color-secundario;
+    color: black;
+    width: 100%;
+    height: 58px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.logo_whatsapp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 300;
+}
+::selection{
+    background: white;
+    color: $color-principal;
+}

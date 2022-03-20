@@ -1,0 +1,57 @@
+@media (max-width: 767px) {
+
+    h1{
+        top: 90px;
+        font-size: 70px!important;
+    }
+
+
+
+    /*HISTORIA*/
+    .historia{
+        article{
+            font-size: 10px;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+            "p1"
+            "p2"
+            "p3"
+            "p4";
+        }
+    }
+        
+    /*GALERIA*/
+.galery__grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: 
+    "title"
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8";
+}
+
+
+    /*FOOTER*/
+footer{
+    flex-direction: column;
+    justify-items: center;
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+.tripadvisor{
+    width: 100px;
+    justify-content: center;
+    }
+
+}

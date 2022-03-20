@@ -1,3 +1,5 @@
+@import 'variables';
+
 header .container{
     display: none;
 }
@@ -10,20 +12,16 @@ header .container{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    a{
+        text-decoration: none;
+        color: black;
+        margin-right: 17px;
+        transition: color 0.2s;
+    }
+    a:hover{
+        color: white;
+    }
 }
-.desktop__nav a{
-    text-decoration: none;
-    color: black;
-    margin-right: 17px;
-    transition: color 0.2s;
-}
-.desktop__nav a:hover{
-    color: white;
-}
-
-
-
-
 
 /*LOGO*/
 .logo{
@@ -33,12 +31,14 @@ header .container{
     display: flex;
     justify-content: left;
 }
-.container label{
-    position: relative;
-    bottom: 47px;
-    display: flex;
-    justify-content: right;
-    cursor: pointer;
+.container{
+    label{
+        position: relative;
+        bottom: 47px;
+        display: flex;
+        justify-content: right;
+        cursor: pointer;
+    } 
 }
 .icon_menu{
     width: 50px;
@@ -52,8 +52,10 @@ header .container{
     .desktop__navbar{
         display: none;
     }
-    header .container{
-        display: block;
+    header{
+        .container{
+            display: block;
+        }
     }
 
     #menu_bar{
@@ -65,18 +67,18 @@ header .container{
         top: 57px;
         left: 0%;
         width: 100%;
+        background-color: #b89890;
         height: auto;
-        background-color: #b89d96;
         transition: all 0.5s;
         transform: translateX(-100%);
-    }
-    .mobile__nav a{
+        a{
         display: block;
         color: white;
         height: 50px;
         text-decoration: none;
         padding: 15px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
     }
     .mobile__nav a:hover{
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
