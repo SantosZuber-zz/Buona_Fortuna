@@ -1,15 +1,17 @@
-@media (max-width: 767px) {
-
-    h1{
-        top: 90px;
-        font-size: 70px!important;
+@media screen and (max-width: 768px) {
+    .banner .index_title{
+            top: 90px;
+            font-size: 70px!important;
+        }
+    .banner h2{
+        font-size: 170%!important;
     }
+    
 
 
 
     /*HISTORIA*/
-    .historia{
-        article{
+    .historia article{
             font-size: 10px;
             display: grid;
             grid-template-columns: auto;
@@ -19,7 +21,6 @@
             "p2"
             "p3"
             "p4";
-        }
     }
         
     /*GALERIA*/
@@ -44,10 +45,10 @@
 footer{
     flex-direction: column;
     justify-items: center;
-    a{
-        display: flex;
-        justify-content: center;
-    }
+}
+footer a{
+    display: flex;
+    justify-content: center;
 }
 .tripadvisor{
     width: 100px;
