@@ -20,7 +20,7 @@
 footer {
   display: flex;
   position: absolute;
-  bottom: -20;
+  bottom: -2000;
   flex-direction: column;
   background-color: black;
   width: 100%;
