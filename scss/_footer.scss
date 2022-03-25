@@ -1,18 +1,18 @@
-footer{
+footer {
     display: flex;
     position: relative;
     flex-direction: row;
-    background-color: black;   
+    background-color: black;
     width: 100%;
     z-index: -1;
-    p{
+    p {
         text-align: center;
         color: white;
         margin: 10px;
         font-size: 70%;
     }
 }
-.tripadvisor{
+.tripadvisor {
     justify-content: right;
     width: 100px;
 }

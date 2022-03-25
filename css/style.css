@@ -37,26 +37,36 @@ footer p {
   width: 100px;
 }
 
-header .container {
+#menu_bar {
   display: none;
 }
 
-.desktop__navbar {
+.icon_menu--flexbox {
+  display: none;
+}
+
+.icon_menu {
+  display: none;
+  width: 50px;
+}
+
+.navbar {
   width: 100%;
   height: 100%;
   position: absolute;
+  right: 7px;
   bottom: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.desktop__navbar a {
+.navbar a {
   text-decoration: none;
   color: black;
   margin-right: 17px;
   transition: color 0.2s;
 }
-.desktop__navbar a:hover {
+.navbar a:hover {
   color: white;
 }
 
@@ -70,6 +80,10 @@ header .container {
   justify-content: left;
 }
 
+.container {
+  width: 98%;
+  margin: auto;
+}
 .container label {
   position: relative;
   bottom: 47px;
@@ -78,34 +92,35 @@ header .container {
   cursor: pointer;
 }
 
-.icon_menu {
-  width: 50px;
-}
-
 @media (max-width: 767px) {
-  .desktop__navbar {
-    display: none;
+  .icon_menu--flexbox {
+    display: block;
+  }
+
+  .icon_menu {
+    display: block;
   }
 
   header .container {
     display: block;
   }
-
-  #menu_bar {
+  header .container #menu_bar {
     display: none;
   }
 
-  .mobile__nav {
+  .navbar {
     position: absolute;
     top: 57px;
     left: 0%;
+    bottom: auto;
+    display: block;
     width: 100%;
     background-color: #b89890;
     height: auto;
     transition: all 0.5s;
     transform: translateX(-100%);
   }
-  .mobile__nav a {
+  .navbar a {
     display: block;
     color: white;
     height: 50px;
@@ -114,19 +129,14 @@ header .container {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .mobile__nav a:hover {
+  .navbar a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  #menu_bar:checked ~ .mobile__nav {
+  #menu_bar:checked ~ .navbar {
     transform: translateX(0%);
   }
 }
-.container {
-  width: 98%;
-  margin: auto;
-}
-
 .banner {
   width: 100%;
   margin-bottom: -7px;
@@ -190,6 +200,14 @@ header .container {
 .menu table {
   padding: 10px;
 }
+.menu table tr {
+  width: 100%;
+  height: 20px;
+}
+.menu table tr td {
+  width: 93%;
+  height: 20px;
+}
 .menu hr {
   margin: 30px;
 }
@@ -229,11 +247,7 @@ header .container {
 }
 
 .galery__grid-container {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  grid-template-areas: "title title" "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+  display: none;
 }
 
 .galery__img {
@@ -276,12 +290,12 @@ header .container {
 .inputs {
   margin-top: 7px;
   text-align: center;
-  width: 137px;
+  width: 170px;
   transition: 0.2s;
 }
 
 .inputs:focus {
-  width: 170px;
+  width: 230px;
   background-color: white;
 }
 
@@ -292,6 +306,7 @@ header .container {
 
 textarea {
   resize: none;
+  border-radius: 7px;
 }
 
 .submit {
