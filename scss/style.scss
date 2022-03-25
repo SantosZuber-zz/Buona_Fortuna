@@ -22,6 +22,10 @@ body {
     color: black;
 }
 
+main{
+        min-height: 500px;
+}
+
 header {
     background-color: $color-secundario;
     color: black;
