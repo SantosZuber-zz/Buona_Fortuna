@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-items: center;
     h3 {
+        color: white;
         grid-area: title;
         font-size: 307%;
         text-align: center;
@@ -20,9 +21,14 @@
     text-align: center;
     width: 170px;
     transition: 0.2s;
+    border: 1px solid transparent;
     &:focus {
         width: 230px;
         background-color: white;
+    }
+    &::selection {
+        color: white;
+        background-color: black;
     }
 }
 .inputs3 {
@@ -41,7 +47,7 @@ textarea {
     height: 100px;
     width: 147px;
     transition: width 0.3s;
-    border: 1px solid transparent;
+    border: 2px solid wheat;
     &:hover {
         cursor: pointer;
         width: 170px;

@@ -25,6 +25,9 @@ footer {
 
     a {
         width: fit-content;
+        .tripadvisor {
+            width: 100px;
+        }
     }
 
     p {
@@ -33,7 +36,4 @@ footer {
         margin: 10px;
         font-size: 70%;
     }
-}
-.tripadvisor {
-    width: 100px;
 }

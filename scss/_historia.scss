@@ -1,4 +1,6 @@
 .historia {
+    color: white;
+    text-shadow: 1px 1px 2px black;
     div {
         display: flex;
         justify-content: center;
@@ -25,11 +27,11 @@
             margin: 30px;
             font-size: 130%;
         }
+        .p1 {
+            grid-area: p1;
+        }
+        .p2 {
+            grid-area: p2;
+        }
     }
-}
-.p1 {
-    grid-area: p1;
-}
-.p2 {
-    grid-area: p2;
 }
