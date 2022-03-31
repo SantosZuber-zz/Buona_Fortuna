@@ -360,6 +360,7 @@ textarea {
   width: 10%;
   min-width: 90px;
   transition: width 0.3s;
+  border: 1px solid transparent;
 }
 .submit:hover {
   cursor: pointer;
