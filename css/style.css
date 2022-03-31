@@ -194,10 +194,8 @@ footer p {
 }
 
 .menu__bg {
-  background-image: url(../assets/img/cuero.jpg);
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
+  background: #3b1b04;
+  background: linear-gradient(0deg, #3b1b04 0%, #813d0a 94%);
 }
 
 .menu {
@@ -411,12 +409,6 @@ header {
   z-index: 300;
 }
 
-/* .spotted__bg {
-    background-image: url(../assets/img/bgtest.png);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-} */
 .spotted__bg {
   background-image: url(../assets/img/bgtest2.png);
   background-size: cover;
