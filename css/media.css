@@ -1,9 +1,11 @@
 @media screen and (max-width: 768px) {
+
     /*INDEX*/
     .banner .index_title {
         top: 90px;
         font-size: 70px !important;
     }
+
     .banner h2 {
         font-size: 170% !important;
     }
@@ -25,6 +27,7 @@
     .carousel {
         display: none;
     }
+
     .galery__grid-container {
         display: grid;
         justify-items: center;
@@ -47,10 +50,12 @@
         flex-direction: column;
         justify-items: center;
     }
+
     footer a {
         display: flex;
         justify-content: center;
     }
+
     .tripadvisor {
         width: 100px;
     }

@@ -25,9 +25,9 @@
         color: black;
         margin-right: 17px;
         transition: color 0.2s;
-    }
-    a:hover {
-        color: white;
+        &:hover {
+            color: white;
+        }
     }
 }
 
@@ -38,6 +38,8 @@
 .logo__flex--container {
     display: flex;
     justify-content: left;
+    position: absolute;
+    z-index: 1;
 }
 .container {
     width: 98%;
@@ -52,6 +54,10 @@
 }
 
 @media (max-width: 767px) {
+    .logo__flex--container {
+        position: static; //Con el static se le quita la posibilidad de clickear el logo en vista mobile, ademas de evitar un bug con el menu hamburguesa.
+    }
+
     .icon_menu--flexbox {
         display: block;
     }
@@ -65,6 +71,9 @@
             display: block;
             #menu_bar {
                 display: none;
+                &:checked ~ .navbar {
+                    transform: translateX(0%);
+                }
             }
         }
     }
@@ -87,12 +96,9 @@
             text-decoration: none;
             padding: 15px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            &:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
         }
-    }
-    .navbar a:hover {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    #menu_bar:checked ~ .navbar {
-        transform: translateX(0%);
     }
 }

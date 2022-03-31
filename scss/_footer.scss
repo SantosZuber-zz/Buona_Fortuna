@@ -1,14 +1,16 @@
 footer {
-//Footer con absolute
+    //Footer con absolute
     display: flex;
+    justify-content: center;
+    justify-items: center;
     position: absolute;
     bottom: -2000;
     flex-direction: column;
     background-color: black;
     width: 100%;
-   
-//Footer con relative desactivado
-/*
+
+    //Footer con relative desactivado
+    /*
     display: flex;
     position: relative;
     flex-direction: row;
@@ -16,9 +18,13 @@ footer {
     width: 100%;
     z-index: -1;
 */
-    a{
+    span {
         display: flex;
         justify-content: center;
+    }
+
+    a {
+        width: fit-content;
     }
 
     p {
